@@ -1,0 +1,7 @@
+ipAddress = params[0]
+shell = get_switch(ipAddress)
+if shell then
+	exit("is_switch: " + ipAddress)
+else if not shell then
+	exit("is_router: " + ipAddress)
+end if
